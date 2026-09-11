@@ -1,34 +1,34 @@
-# WebComics Ripper
+# WebComics Downloader
 
-An automated Tampermonkey userscript designed to intercept and download high-quality chapter images from WebComicsApp directly into neatly organized local folders[cite: 12]. 
+A custom userscript built to fetch high-resolution comic pages from the WebComicsApp platform and save them directly into organized folders on your computer.
 
-## ✨ Core Features
+## ✨ Main Capabilities
 
-* **Network API Interception:** Hooks into the site's native XHR and Fetch requests to silently capture original image URLs directly from the JSON data, ensuring lossless extraction[cite: 12].
-* **Smart Chapter Matching:** Cross-checks the URL's chapter ID with the intercepted data to guarantee you are downloading the current chapter, preventing accidental downloads of pre-loaded next chapters[cite: 12].
-* **Sleek Floating UI:** Features a modern, non-intrusive floating panel in the bottom-right corner with live status indicators (Waiting, Ready, Downloading), progress bars, and toast notifications[cite: 12].
-* **Native Folder Organization:** Utilizes `GM_download` to save images directly to your device (e.g., `Downloads/<Chapter_Title>/001.jpg`), completely bypassing the need for ZIP extraction[cite: 12].
-* **SPA Navigation Support:** Automatically detects when you move to a new chapter without refreshing the page, resetting the tool to capture the next batch of images automatically[cite: 12].
+* **Background Request Capture:** Monitors network traffic (Fetch/XHR) to silently grab the original image source URLs from the site's data stream, guaranteeing top quality.
+* **Accurate Episode Detection:** Verifies the current URL against the backend data to ensure you only download the chapter you are currently reading, preventing mix-ups with preloaded content.
+* **Modern Interface:** Displays a clean, floating control panel on your screen that shows real-time progress, status updates, and interactive buttons.
+* **Direct Directory Save:** Uses the browser's native download API to save files straight to your hard drive (e.g., `Downloads/Comic_Name/001.jpg`) without needing ZIP extraction.
+* **Dynamic Page Load Handling:** Seamlessly resets and prepares for the next batch of images when you navigate to a new episode without refreshing the web page.
 
-## 🌐 Supported Languages
+## 🌐 Supported Regional Versions
 
-This script fully supports the WebComicsApp platform across the following languages: **English, Français, Português, Español, and Indonesia**[cite: 11].
+This tool works perfectly across multiple language versions of the site, including English, French, Portuguese, Spanish, and Indonesian.
 
-## 🚀 Installation & Usage
+## 🚀 How to Install and Use
 
-1. **Prerequisite:** Install the **Tampermonkey** extension (highly recommended for `GM_download` compatibility)[cite: 11, 12].
-2. **Install Script:** Add the userscript to your manager[cite: 12].
-3. **Usage:** Open any chapter on WebComicsApp[cite: 12]. The floating panel will initially say "Waiting for pages…" and then switch to "Ready" once the images are successfully intercepted[cite: 12].
-4. **Download:** Click the download button in the floating panel to automatically queue and save all pages into a named folder[cite: 12]. (If interception misses, the script includes a fallback button to directly fetch the API data[cite: 12]).
+1. **Requirements:** Make sure you have a userscript manager installed (Tampermonkey is strongly advised for proper file saving).
+2. **Setup:** Add the code to your extension dashboard.
+3. **Running the Tool:** Navigate to a comic episode. The floating menu will display a waiting status, then change to ready once the page data is captured.
+4. **Saving Files:** Press the download button to queue the images and save them locally. (A fallback option is included if the automatic capture misses).
 
-## ⚠️ Disclaimer
+## ⚠️ Important Notice
 
-**This script is strictly for educational purposes.** Please support the original creators and platforms. Do not repost or redistribute the downloaded images[cite: 11].
+**This project is provided for educational learning only.** Please respect comic creators and platforms. Do not upload or share the saved media elsewhere.
 
-## 🔗 Links, Feedback & Support
+## 🔗 Resources and Contact
 
-* **Greasyfork Scripts:** [ozler365's Profile](https://greasyfork.org/en/users/1553223-ozler365)[cite: 11]
-* **GitHub Repositories:** [ozler-s-works-info](https://ozler365.github.io/ozler-s-works-info/#/repositories)[cite: 11]
-* **Support the Developer:** Keep this script updated by leaving a small donation at [Buy Me a Coffee (ozler)](https://buymeacoffee.com/ozler)[cite: 11]
+* **Script Profile:** [ozler365 on Greasyfork](https://greasyfork.org/en/users/1553223-ozler365)
+* **GitHub Portfolio:** [ozler-s-works-info](https://ozler365.github.io/ozler-s-works-info/#/repositories)
+* **Support the Project:** If you find this helpful, consider leaving a tip at [Buy Me a Coffee (ozler)](https://buymeacoffee.com/ozler)
 
-For queries, bug reports, or feature requests, please leave a review on Greasyfork or email **devjk6918@gmail.com**[cite: 11].
+For feedback or bug reports, please drop a review on Greasyfork or email **devjk6918@gmail.com**.
